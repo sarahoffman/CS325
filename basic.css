@@ -1,0 +1,115 @@
+/* CSS Document
+ * Authors: Sara Hoffman and Taylor Kennedy
+ * CS 325 Final Project
+ * Website for Lutian & Monteleone
+ */
+
+@charset "UTF-8";
+
+body {
+    background: url("images/background.jpg") no-repeat;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+
+hr {
+    margin: 0;
+    border-color: white;
+    color: white;
+    background-color: white;
+}
+
+h1 {
+    color: white;
+    font-size: 40pt;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5pt;
+    padding-bottom: 5pt;
+}
+
+#amp {
+    color: #6c6c6c;
+}
+
+#title {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+}
+
+#title a {
+    text-decoration: none;
+}
+
+#nav_bar {
+    text-align: center;
+    background-color: black;
+}
+
+#nav_bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+#nav_bar li {
+    float: left;
+}
+
+#nav_bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#nav_bar li a:hover {
+    background-color: #393939;
+}
+
+.sm-list {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.sm-list li {
+    float: left;
+    display: inline-block;
+    margin-right: 12px;
+    line-height: 32px;
+}
+
+/*.sm-btn {*/
+    /*width: 32px;*/
+    /*height: 32px;*/
+    /*overflow: hidden;*/
+    /*display: block;*/
+    /*text-indent: -9999px;*/
+    /*white-space: nowrap;*/
+
+    /*background-repeat: no-repeat;*/
+    /*background-position: 0 0 !important;*/
+/*}*/
+
+.sm-btn img {
+    width: 32px;
+    height: 32px;
+}
+
+/*#facebook-btn:hover, #twitter-btn:hover, #youtube-btn:hover, #instagram-btn:hover {*/
+    /*background-position: 0 -32px !important;*/
+/*}*/
+
+/*#footer {*/
+    /*background-color: white;*/
+    /*height: fit-content;*/
+/*}*/
