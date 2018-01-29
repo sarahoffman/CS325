@@ -1,4 +1,4 @@
-#bios {
+#proj {
     width: 85%;
     margin: 0 auto;
     margin-top: 2%;
@@ -8,10 +8,9 @@
     padding-right: 2%;
     padding-top: 2%;
     overflow: auto;
-    display: block;
 }
 
-#bios h2 {
+#proj h2 {
     color: black;
     text-decoration: underline;
     text-decoration-color: #000;
@@ -19,14 +18,7 @@
     margin-bottom: 8pt;
 }
 
-#bios img {
-    width: 25%;
-    float: left;
-    margin-right: 20pt;
-    margin-bottom: 2%;
-}
-
-#bios h3 {
+#proj h3 {
     clear: both;
     margin-top: 10pt;
 }
