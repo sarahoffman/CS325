@@ -16,9 +16,17 @@
     text-decoration-color: #000;
     margin-top: 14pt;
     margin-bottom: 8pt;
+    clear: both;
 }
 
 #proj h3 {
     clear: both;
     margin-top: 10pt;
+}
+
+.logo {
+    width: 12%;
+    float: left;
+    margin-right: 20pt;
+    margin-bottom: 2%;
 }
