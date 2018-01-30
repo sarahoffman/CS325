@@ -78,20 +78,13 @@ h1 {
 
 .sm-list {
     list-style: none;
-    margin-top: 10px;
 }
 
 .sm-list li {
     float: left;
-    display: inline-block;
     margin-right: 12px;
     height: 32px;
     width: 32px;
-}
-
-.sm-btn img {
-    width: 32px;
-    height: 32px;
 }
 
 #fb-btn-image {
@@ -128,22 +121,20 @@ h1 {
 }
 
 .footer {
-    text-align: center;
     position: absolute;
+    left: 0;
     right: 0;
     bottom: 0;
-    padding: 1rem;
     padding-bottom: 0;
 }
 
 .sm-list {
     float: right;
-    display: inline-block;
     clear: both;
+    margin: 0;
 }
 
 #container {
     min-height: 100%;
-    height: 100%;
     position: relative;
 }

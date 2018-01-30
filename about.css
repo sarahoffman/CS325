@@ -1,3 +1,9 @@
+/* CSS Document
+ * Authors: Sara Hoffman and Taylor Kennedy
+ * CS 325 Final Project
+ * Website for Lutian & Monteleone
+ */
+
 #bios {
     width: 85%;
     margin: 0 auto;
@@ -29,4 +35,20 @@
 #bios h3 {
     clear: both;
     margin-top: 10pt;
+}
+
+.footer {
+    width: 100%;
+    height: 35px;
+    margin-bottom: -45px;
+}
+
+#container {
+    margin-bottom: 50px;
+}
+
+.footer p {
+    float: left;
+    color: white;
+    line-height: 32px;
 }
