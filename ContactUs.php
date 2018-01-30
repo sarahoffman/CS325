@@ -1,3 +1,9 @@
+<!--File: ContactUs.php-->
+<!--Authors: Sara Hoffman and Taylor Kennedy-->
+<!--Date: 1-30-18-->
+
+<!--Description: Page to add provide contact us information -->
+<!-- that allows users to join email list. -->
 
 <?php
 
@@ -6,11 +12,13 @@ $first_name = $_POST["firstname"];
 $last_name = $_POST["lastname"];
 $email = $_POST["email"];
 
-//check if it is there
 try {
+    //check if it is there
     if ($first_name !== null && $last_name !== null && $email !== null){
+        //strip names of possible injections
         $first_name = htmlspecialchars($first_name);
         $last_name = htmlspecialchars($last_name);
+        // make connection and insert information
         $conn = new PDO("mysql:host=localhost;dbname=shoffman","shoffman", "Hoffdb325");
         // set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -35,23 +43,26 @@ catch(PDOException $e) {
     <link rel="icon" href="images/musicNote.png">
 </head>
 <body>
+<div id="container">
+<!--Setup background image and navicatoin bar-->
 <div id="background_image"></div>
 <div id="title"><a href="Home.html"><h1>Lutian <span id="amp">&</span> Monteleone</h1></a></div>
-
 <hr>
 <div id="nav_bar">
     <ul>
         <li><a href="Home.html">Home</a></li>
         <li><a href="About.html">About</a></li>
         <li><a href="Projects.html">Projects</a></li>
-        <li><a href="News.html">News</a></li>
+        <li><a href="News.php">News</a></li>
         <li><a href="ContactUs.php">Contact Us</a></li>
     </ul>
 </div>
 
-<div id="info">
+<!--Main div for white background area to contain contnet-->
+<div id="main">
     <div id="pic"><img src="images/jos-and-katie.jpg"></div>
     <div id="columns">
+        <!-- Left column for social media links and emails -->
         <div id="column-left">
             <h2>Get Social</h2>
             Connect with us on social media!<br><br>
@@ -72,6 +83,7 @@ catch(PDOException $e) {
             Email Josua at <a href="mailto:jclutian@gmail.com">jclutian@gmail.com</a>.<br><br>
         </div>
 
+        <!-- Right column for email list form -->
         <div id="column-right">
             <h2>Join Our Mailing List</h2>
             <form action="ContactUs.php" method="post">
@@ -87,11 +99,12 @@ catch(PDOException $e) {
     </div>
 </div>
 
-
+<!-- Footer template to preserve formatting -->
 <div class="footer">
     <div id="footer-column-right" class="footer-column">
         <div class="footer-title">   </div>
     </div>
+</div>
 </div>
 </body>
 </html>

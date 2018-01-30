@@ -1,0 +1,17 @@
+/* CSS Document
+ * Authors: Sara Hoffman and Taylor Kennedy
+ * CS 325 Final Project
+ * Website for Lutian & Monteleone
+
+ CSS for addNews.php (Add News page)
+ */
+
+/* Set width of inputs */
+input[type="text"] {
+    width: 200px;
+}
+
+/* Set margin */
+input, textarea{
+    margin-bottom: 1%;
+}

@@ -2,34 +2,17 @@
  * Authors: Sara Hoffman and Taylor Kennedy
  * CS 325 Final Project
  * Website for Lutian & Monteleone
+
+ CSS for Projects.html (Projects page)
  */
 
-#proj {
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    overflow: auto;
-}
-
-#proj h2 {
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: #000;
-    margin-top: 14pt;
-    margin-bottom: 8pt;
-    clear: both;
-}
-
-#proj h3 {
+/* Clear titles from text wrapping around logos */
+#main h3 {
     clear: both;
     margin-top: 10pt;
 }
 
+/* Format logo images to proper size and set text wrapping */
 .logo {
     width: 12%;
     float: left;

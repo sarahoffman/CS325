@@ -1,3 +1,4 @@
+-- Db for email list
 DROP TABLE IF EXISTS `email_list`;
 CREATE TABLE `email_list` (
   `id` INT(6) UNSIGNED AUTO_INCREMENT,
