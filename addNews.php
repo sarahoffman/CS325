@@ -6,6 +6,8 @@
 <!-- for Lutian & Monteleone... not secure. -->
 
 <?php
+session_start();
+
 // get stuff from the form
 $content = $_POST["content"];
 $link = $_POST["link"];
@@ -79,6 +81,16 @@ if ($content !== null && $link !== null) {
         <input type="text" name="source" placeholder="Optional: enter publication title here."><br>
         <input type="submit">
     </form>
+    
+    <!-- Add logout button that redirects to adminLogin.php -->
+    <p><a href="?logout=1">Logout</a></p>
+	<?php
+    	if(isset($_GET['logout'])) {
+    		$_SESSION['username'] = '';
+    		header('Location: adminLogin.php');
+		}
+	?>
+
 </div>
 </body>
 </html>

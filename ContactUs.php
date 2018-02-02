@@ -60,7 +60,7 @@ catch(PDOException $e) {
 
 <!--Main div for white background area to contain contnet-->
 <div id="main">
-    <div id="pic"><img src="images/jos-and-katie.jpg"></div>
+    <div id="pic"><img src="images/jos-and-katie.jpg" alt="Josua and Katie"></div>
     <div id="columns">
         <!-- Left column for social media links and emails -->
         <div id="column-left">

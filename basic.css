@@ -79,8 +79,59 @@ h1 {
     background-color: #393939;
 }
 
+#main {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    overflow: auto;
+    display: block;
+}
+
+#main h2 {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #000;
+    margin-top: 14pt;
+    margin-bottom: 8pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    min-height: 100%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    height: 35px;
+    margin-bottom: -45px;
+}
+
+.footer p {
+    float: left;
+    color: white;
+    line-height: 32px;
+}
+
 .sm-list {
     list-style: none;
+    float: right;
+    clear: both;
+    margin: 0;
 }
 
 .sm-list li {
@@ -121,58 +172,4 @@ h1 {
     background-color:#000;
     opacity:0.5;
     border-radius: 35px;
-}
-
-.footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-bottom: 0;
-    width: 100%;
-    height: 35px;
-    margin-bottom: -45px;
-}
-
-.sm-list {
-    float: right;
-    clear: both;
-    margin: 0;
-}
-
-#container {
-    min-height: 100%;
-    position: relative;
-    margin-bottom: 50px;
-}
-
-.footer p {
-    float: left;
-    color: white;
-    line-height: 32px;
-}
-
-#main {
-    width: 85%;
-    margin: 0 auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    background-color: white;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-top: 2%;
-    overflow: auto;
-    display: block;
-}
-
-#main h2 {
-    color: black;
-    text-decoration: underline;
-    text-decoration-color: #000;
-    margin-top: 14pt;
-    margin-bottom: 8pt;
-}
-
-a {
-    text-decoration: none;
 }
