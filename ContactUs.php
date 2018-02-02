@@ -88,11 +88,14 @@ catch(PDOException $e) {
             <h2>Join Our Mailing List</h2>
             <form action="ContactUs.php" method="post">
                 First name:<br>
-                <input type="text" name="firstname" placeholder="John" required="required" pattern="^[a-zA-Z]+" title="First name must contain only letters."><br>
+                <input type="text" name="firstname" placeholder="John" required="required"
+                       pattern="^[a-zA-Z]+" title="First name must contain only letters."><br>
                 Last name:<br>
-                <input type="text" name="lastname" placeholder="Doe" required="required" pattern="^[a-zA-Z]+" title="Last name must contain only letters."><br>
+                <input type="text" name="lastname" placeholder="Doe" required="required"
+                       pattern="^[a-zA-Z]+" title="Last name must contain only letters."><br>
                 Email address:<br>
-                <input type="text" name="email" placeholder="john@gmail.com" required="required" pattern="^.+@{1}[^\.].*\.[a-z]{2,}" title="You must enter a valid email address."><br>
+                <input type="text" name="email" placeholder="john@gmail.com" required="required"
+                       pattern="^.+@{1}[^\.].*\.[a-z]{2,}" title="You must enter a valid email address."><br>
                 <input type="submit">
             </form>
         </div>

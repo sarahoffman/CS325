@@ -19,7 +19,7 @@ $admins = array('katie'=>'1b908e69c96485706095ed1b37bea00a',
 $username = htmlspecialchars($_POST['username']);
 $password = htmlspecialchars($_POST['password']);
 
-// check if username and password match, password uses md5 encryption
+// check if username and password match, password uses md5 hash
 if(!empty($username)){
     // if username and password match
     if($admins[$username] == md5($password)) {
@@ -63,7 +63,7 @@ if(!empty($username)){
                 <!-- create form for username and password -->
                 <fieldset>
                 <legend>Admin Login</legend>
-                <form name="login" action="" method="post">
+                    <form name="login" method="post">
                     Username:  <input type="text" name="username"><br>
                     Password:  <input type="password" name="password"><br>
                     <input type="submit" name="submit">
